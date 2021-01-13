@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import './Main.css';
-//import io from 'socket.io-client';
+import io from 'socket.io-client';
 import logo from '../assets/logo.svg';
 import like from '../assets/like.svg';
 import dislike from '../assets/dislike.svg';
-//import itsamatch from '../imagens/assets/itsamatch.png';
+import itsamatch from '../assets/itsamatch.png';
 import api from '../services/api'
 
- export default function Main({match,history}){
 
+ export default function Main({match,history}){
     const loggedUserId = localStorage.getItem('@tindev/_id');
     const[user,setUser] = useState([]);
-    //const[matchDev,setMatchDev] = useState(null);
+    const[matchDev,setMatchDev] = useState(null);
 
     async function handleLike(targetUserId, loggedUserId){
         await api.post('/like',{ 
@@ -38,23 +38,21 @@ import api from '../services/api'
             const response = await api.post('/loadUsers',{
              loggedUserId
             })
-
             setUser(response.data);
         }
         loaduser();
-     },);
+     },[loggedUserId]);
 
-/* No SOCKET IO FOR THIS MOMENTS
-    useEffect(() =>{
-
-        const socket = io('http://localhost:3334',{
-            query: {user:match.params.id}
+    useEffect(()=>{
+        const socket = io('http://192.168.0.104:3335',{
+            query:{user:loggedUserId}
         });
+
         socket.on('match', dev =>{
             setMatchDev(dev);
-        })
-    },[match.params.id]);
-*/
+        });
+    },[loggedUserId])
+
      return(
         <div className="main-container">
             <button onClick={handleLogout} className="buttonLogout">
@@ -85,7 +83,6 @@ import api from '../services/api'
             ) : (
             <div className="empty"><h1>Acabou :(</h1></div> 
      )}
-     {/*
      {matchDev && (
          <div className="match-containe">
              <img src={itsamatch} alt="it's a match" />
@@ -95,7 +92,7 @@ import api from '../services/api'
          <button type="button"onClick={() => setMatchDev(false)} >FECHAR</button>
          </div>
      )}
-        */}
+        
         </div>
      );
  }

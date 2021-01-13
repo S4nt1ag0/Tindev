@@ -22,6 +22,7 @@ const DevSchema = new Schema ({
         type: Schema.Types.ObjectID,
         ref: 'Dev',
     }],
+    SocketId: {type:String},
     },{
         timestamps:true,
 });

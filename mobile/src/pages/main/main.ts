@@ -3,15 +3,15 @@ import {StyleSheet} from 'react-native';
  const styles = StyleSheet.create({
         container:{
             flex:1,
-            alignItems:'center',
             backgroundColor:'#f5f5f5',
+            alignItems:'center',
             justifyContent: 'space-between',
         },
         cardContainer:{
             flex:1,
-            maxHeight:500,
             alignSelf:'stretch',
             justifyContent:'center',
+            maxHeight:500,
                
         },
         
@@ -54,15 +54,16 @@ import {StyleSheet} from 'react-native';
         containerButton:{
             flexDirection:'row',
             marginBottom:30,
+            zIndex:1
         },
         button:{
             height:50,
             width:50,
             borderRadius:25,
-            marginHorizontal:20,
             backgroundColor: '#fff',
             alignItems: 'center',
             justifyContent: 'center',
+            marginHorizontal:20,
             elevation:2,
             shadowColor: '#000',
             shadowOpacity: 0.05,
@@ -77,16 +78,13 @@ import {StyleSheet} from 'react-native';
             alignSelf: 'center',
             color: '#999',
         },
+
         matchContainer:{
-            position:'absolute',
-            top:0,
-            left:0,
-            right:0,
-            bottom:0,
+           ...StyleSheet.absoluteFillObject,
             backgroundColor: 'rgba(0,0,0,0.8)',
             justifyContent: 'center',
             alignItems: 'center',
-            zIndex:2000,
+            zIndex:200,
         },
         matchlogo:{
             height:60,
@@ -115,7 +113,7 @@ import {StyleSheet} from 'react-native';
             fontSize:16,
             textAlign:'center',
         },
-        matchButton:{
+        closeMatch:{
             color:'rgba(255,255,255,0.8)',
             fontSize:16,
             marginTop:30,

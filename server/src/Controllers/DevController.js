@@ -24,7 +24,8 @@ module.exports = {
             loggedDev.likes.push(targetDev._id)
             await loggedDev.save();
             if(targetDev.likes.includes(loggedDev._id)){
-                return res.json({message: 'DEU MACTH'});
+                req.io.to(loggedDev.SocketId).emit('match',targetDev)
+                req.io.to(targetDev.SocketId).emit('match',loggedDev)
             }else{
                 return res.json(loggedDev)
             }
