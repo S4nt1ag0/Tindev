@@ -50,19 +50,26 @@ module.exports = {
 
     async store (req, res ) {
         const {username} = req.body;
-        const userExists = await Dev.findOne({username: username});
+        const userExists = await Dev.findOne({username: username.toLowerCase()});
         if( userExists ){
             return res.json(userExists);
         }else{
-            const response = await axios.get(`https://api.github.com/users/${username}`);
-            const dev = await Dev.create({    
+            try {
+                const response = await axios.get(`https://api.github.com/users/${username}`);
+                const dev = await Dev.create({    
                 name: response.data.name,
                 username,
                 avatar: response.data.avatar_url,
                 bio:response.data.bio,
             });
+                return res.json(dev);
+                
+            } catch (error) {
+                return res.status(404).json({message:'Dev not found'})
+            }
+            
 
-            return res.json(dev);
+           
         }
        
     }

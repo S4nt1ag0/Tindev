@@ -8,14 +8,20 @@ export default function Login( {history} ) {
 
   async function Login(e){
     e.preventDefault();
-    const response = await api.post('/login',{
+    try {
+      const response = await api.post('/login',{
       username,
     });
     const { _id }=response.data; 
-    localStorage.setItem('@tindev/_id',_id)
-    history.push('/devs');
+      localStorage.setItem('@tindev/_id',_id)
+      console.log(response.data)
+      history.push('/devs');
+    } catch (err) {
+      alert('Dev não encontrado')
+      console.error(err.response.data);
+    }
+   
   }
-  //please
   return (
     <div className="login-container" >
       <form onSubmit={Login}> 
