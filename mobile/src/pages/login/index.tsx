@@ -20,10 +20,14 @@ export default function Login (){
     },[]);
 
     async function handleLogin(){
-        const response = await api.post('/login',{ username: user }); 
-        const {_id} = response.data;
-        await AsyncStorage.setItem('tindev/loggedId',_id);
-        navigate('Main',{loggedUserId:_id });
+        try {
+            const response = await api.post('/login',{ username: user });
+            const { _id }=response.data; 
+            await AsyncStorage.setItem('tindev/loggedId',_id);
+            navigate('Main',{loggedUserId:_id });
+        } catch (err) {
+            alert('Dev não encontrado')
+        }
     }
     
     return(

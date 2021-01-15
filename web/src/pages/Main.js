@@ -14,11 +14,14 @@ import api from '../services/api'
     const[matchDev,setMatchDev] = useState(null);
 
     async function handleLike(targetUserId, loggedUserId){
+        setUser(user.filter(user => user._id !== targetUserId));
         await api.post('/like',{ 
             targetUserId,
             loggedUserId
         });
-        setUser(user.filter(user => user._id !== targetUserId));
+        
+        
+        
         }
     async function handleDislike(targetUserId, loggedUserId){
         await api.post('dislike',{ 

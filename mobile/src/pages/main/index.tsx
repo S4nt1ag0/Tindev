@@ -22,11 +22,12 @@ export default function Main ( {route}) {
 
     async function handleLike(){
         const [user, ...rest] = users;
+        setUsers(rest);
         await api.post('/like',{ 
             targetUserId: user._id,
 	        loggedUserId
         });
-        setUsers(rest);
+        
         }
     async function handleDislike(){
         const [user, ...rest] = users;
@@ -77,7 +78,6 @@ export default function Main ( {route}) {
                  ? <Text style={styles.empty}> acabou :( </Text>
                     : (
                     users.map((user,index) => (
-                <>
                 <View  key={user._id} style={[styles.card, { zIndex: users.length - index }]}>
                     <Image style={styles.avatar} source={{uri:user.avatar}}/>
                     <View style={styles.footer}>
@@ -89,8 +89,6 @@ export default function Main ( {route}) {
                         </Text>
                     </View>
                 </View>
-                
-                </>
                     ))
                 )}
             </View>
