@@ -18,7 +18,7 @@ export default function Login( {history} ) {
       history.push('/devs');
     } catch (err) {
       alert('Dev não encontrado')
-      console.error(err.response.data);
+      console.error(err);
     }
    
   }
