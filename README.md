@@ -3,10 +3,14 @@
   <img src="./web/src/assets/logo.svg" alt="TinDev" width="120">
 <br>
 <br>
-Tindev
 </h1>
 
 <p align="center">A project prepared by Rocketseat developed during the week OmniStack 8</p>
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
 
 ## Tech Stacks
 
@@ -53,6 +57,6 @@ get the url that expo show when you run `expo start` and add the port of localho
 
 Note2: if you will use emulator remember start the emulator before choose initialize the mobile application in emulador when run 'expo start'
 
-## License
+## License 
 
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
