@@ -63,7 +63,7 @@
 Note: if you are running yuor api in localhost, remember that the localhost address change for your smartphone or you emulator, in this case 
 get the url that expo show when you run `expo start` and add the port of localhost where the server are running.
 
-Note2: if you will use emulator remember start the emulator before choose initialize the mobile application in emulador when run 'expo start'
+Note2: if you will use emulator remember start the emulator before choose initialize the mobile application in emulador when run `expo start`
 
 ## License 
 
