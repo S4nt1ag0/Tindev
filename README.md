@@ -13,9 +13,9 @@
 </p>
 
 <div>
-  <img src="./assets/demo-web.gif" alt="demo-web" height="370">&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="./assets/demo-mobile.gif" alt="demo-mobile" height="370">
+  <img src="./assets/demo-web.gif" alt="demo-web" height="360">&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./assets/demo-mobile.gif" alt="demo-mobile" height="360">
 </div>
 
 <hr />
