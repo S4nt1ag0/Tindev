@@ -13,6 +13,7 @@
 </p>
 
 <div>
+  ![myimg](./assets/demo-web.gif){: height="350px" style="float:left; padding-right:10px"}
   <img src="./assets/demo-web.gif" alt="demo-web" height="350" margin-right="20">
   <img src="./assets/demo-mobile.gif" alt="demo-mobile" height="350">
 </div>
