@@ -13,7 +13,7 @@
 </p>
 
 <div>
-  <img src="./assets/demo-web.gif" alt="demo-web" height="370">
+  <img src="./assets/demo-web.gif" alt="demo-web" height="370">&nbsp;&nbsp;&nbsp;
   <img src="./assets/demo-mobile.gif" alt="demo-mobile" height="370">
 </div>
 
