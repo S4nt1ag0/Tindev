@@ -3,22 +3,26 @@
   <img src="./web/src/assets/logo.svg" alt="TinDev" width="120">
 <br>
 <br>
-Tindev
 </h1>
 
 <p align="center">A project prepared by Rocketseat developed during the week OmniStack 8</p>
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License MIT">
+  </a>
+</p>
 
-##Tech Stacks
+## Tech Stacks
 
 - :atom_symbol: **[React Js](https://reactjs.org)** — A JavaScript library for building user interfaces
 - :atom_symbol: **[React Native](https://reactnative.dev/)** — A lib that provides a way to create native apps for Android and iOS
-- :arrows_counterclockwise: **[Typescript](https://www.typescriptlang.org/)** — TypeScript is a superset of JavaScript that adds typing and some other features to the language
-- :toolbox: **[Expo](https://expo.io/)** — Expo is an open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
-- :gear: **[Node Js](https://nodejs.org/en/)** — Node.js is multiplatform software, which executes JavaScript code on the backend and frontend / interface
-- :closed_lock_with_key: **[MongoDB](https://docs.mongodb.com/)** — MongoDB is an open source, multiplatform oriented database software
+- :arrows_counterclockwise: **[Typescript](https://www.typescriptlang.org/)** — A superset of JavaScript that adds typing and some other features to the language
+- :toolbox: **[Expo](https://expo.io/)** — An open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
+- :gear: **[Node Js](https://nodejs.org/en/)** — A multiplatform software, which executes JavaScript code on the backend and frontend / interface
+- :closed_lock_with_key: **[MongoDB](https://docs.mongodb.com/)** — An multiplatform open source database oriented software
 - :rocket: **[Socket IO](https://socket.io/)** — A library for realtime web applications
 
-##Features
+## Features
 
 * Expo was used to create the native application.
 * The Websocket connection was persisted in the database in order to make the server more stateless.
@@ -53,6 +57,6 @@ get the url that expo show when you run `expo start` and add the port of localho
 
 Note2: if you will use emulator remember start the emulator before choose initialize the mobile application in emulador when run 'expo start'
 
-## License
+## License 
 
 This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) page for details.
