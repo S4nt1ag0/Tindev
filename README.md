@@ -12,7 +12,10 @@
   </a>
 </p>
 
-![myimg](./assets/demo-web.gif){: height="350px" style="float:left; padding-right:10px"} [myimg](./assets/demo-mobile.gif){: height="350px" style="float:left"}
+<div>
+  <img src="./assets/demo-web.gif" alt="demo-web" height="370">
+  <img src="./assets/demo-mobile.gif" alt="demo-mobile" height="370">
+</div>
 
 <hr />
 
