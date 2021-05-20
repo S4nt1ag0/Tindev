@@ -12,8 +12,7 @@
   </a>
 </p>
 
-![myimg](./assets/demo-web.gif){: height="350px" style="float:left; padding-right:10px"}
-![myimg](./assets/demo-mobile.gif){: height="350px" style="float:left"}
+![myimg](./assets/demo-web.gif){: height="350px" style="float:left; padding-right:10px"} [myimg](./assets/demo-mobile.gif){: height="350px" style="float:left"}
 
 <hr />
 
