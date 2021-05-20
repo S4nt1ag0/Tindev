@@ -33,19 +33,19 @@ Tindev
 ### Getting started with the backend server
 
 1. Move yourself to the backend folder: `cd server`
-2. Create a `.env` file and add the MongoDB url connection in DATABASE_URI field
+2. Create a `.env` file and add the MongoDB url connection in `DATABASE_URI` field
 3. Run `yarn runBackend` to start the server
 
 ### Getting started with the frontend app
 
 1. Move yourself to the frontend folder: `cd web`
-2. Create a `.env` file and add the url and the port where the API are running in REACT_APP_API_URL field
+2. Create a `.env` file and add the url and the port where the API are running in `REACT_APP_API_URL` field
 3. Run `yarn start` to start the web application
 
 ### Getting started with the mobile app
 
 1. Move yourself to the mobile folder: `cd mobile`
-2. Create a `.env` file and add the url and the port where the API are running in REACT_APP_API_URL field
+2. Create a `.env` file and add the url and the port where the API are running in `REACT_APP_API_URL` field
 3. Run `expo start` to start the mobile application and scanned the QR code with your smartphone or choose the option for run in your emulator
 
 Note: if you are running yuor api in localhost, remember that the localhost address change for your smartphone or you emulator, in this case 

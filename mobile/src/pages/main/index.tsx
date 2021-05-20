@@ -49,7 +49,7 @@ export default function Main ( {route}) {
      },[loggedUserId]);
 
     useEffect(()=>{
-        const socket = io('http://192.168.0.104:3335',{
+        const socket = io(`${api.defaults.baseURL}`,{
             query:{user:loggedUserId}
         });
 

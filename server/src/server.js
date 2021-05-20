@@ -13,7 +13,6 @@ const io = require('socket.io')(server, {
   }
 });
 
-
 io.on('connection', socket => {
     const { user } = socket.handshake.query;
     console.log('Nova conexão, o user:'+ user + 'se conectou pelo id.socer:' + socket.id)

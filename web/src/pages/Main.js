@@ -47,9 +47,10 @@ import api from '../services/api'
      },[loggedUserId]);
 
     useEffect(()=>{
-        const socket = io('http://192.168.0.104:3335',{
+        console.log(`${api.defaults.baseURL}`)
+        const socket = io(`${api.defaults.baseURL}`,{
             query:{user:loggedUserId}
-        });
+        }); 
 
         socket.on('match', dev =>{
             setMatchDev(dev);
