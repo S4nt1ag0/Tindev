@@ -13,8 +13,8 @@
 </p>
 
 <div>
-  <img src="./assets/demo-web.gif" alt="demo-web" height="425">
-  <img src="./assets/demo-mobile.gif" alt="demo-mobile" height="425">
+  <img src="./assets/demo-web.gif" alt="demo-web" height="200">
+  <img src="./assets/demo-mobile.gif" alt="demo-mobile" height="200">
 </div>
 
 <hr />
