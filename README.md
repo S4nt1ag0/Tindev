@@ -29,7 +29,7 @@
 - :closed_lock_with_key: **[MongoDB](https://docs.mongodb.com/)** — An multiplatform open source database oriented software
 - :rocket: **[Socket IO](https://socket.io/)** — A library for realtime web applications
 
-## Features
+## Additional Features
 
 * Expo was used to create the native application.
 * The Websocket connection was persisted in the database in order to make the server more stateless.
